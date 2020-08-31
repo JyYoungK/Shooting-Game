@@ -37,10 +37,10 @@ def writeMessage(text):
     textpos.center = (padWidth/2, padHeight/2)
     gamePad.blit(text, textpos)
     pygame.display.update()
-    pygame.mixer.music.stop()
+    ##pygame.mixer.music.stop()
     gameOverSound.play()
     sleep(2)
-    pygame.mixer.music.play(-1)
+    ##pygame.mixer.music.play(-1)
     runGame()
 
 def crash():
@@ -61,8 +61,8 @@ def initGame():
     missile = pygame.image.load("img/missile.png")
     explosion = pygame.image.load("img/explosion.png")
     clock = pygame.time.Clock()
-    pygame.mixer.music.load("sound/music.wav")
-    pygame.mixer.music.play(-1)
+    ##pygame.mixer.music.load("sound/music.wav")
+    ##pygame.mixer.music.play(-1)
     missileSound = pygame.mixer.Sound("sound/missile.wav")    #Missile Sound
     gameOverSound = pygame.mixer.Sound("sound/gameover.wav")  #Game Over Sound
     clock = pygame.time.Clock()
